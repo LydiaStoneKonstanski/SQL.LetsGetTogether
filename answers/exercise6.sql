@@ -1,0 +1,8 @@
+mysql> SELECT Country,
+COUNT(*)
+FROM STUDENTS
+GROUP BY Country
+HAVING COUNT(*) > 10
+ORDER BY COUNT(*)
+DESC;
+Empty set (0.05 sec)
